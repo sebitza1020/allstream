@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import './modal.scss';
@@ -10,11 +10,12 @@ const Modal = props => {
     useEffect(() => {
         setActive(props.active);
     }, [props.active]);
-  return (
-    <div id={props.id} className={`modal ${active ? 'active' : ''}`}>
-        {props.children}       
-    </div>
-  );
+
+    return (
+        <div id={props.id} className={`modal ${active ? 'active' : ''}`}>
+            {props.children}
+        </div>
+    );
 }
 
 Modal.propTypes = {
@@ -30,7 +31,8 @@ export const ModalContent = props => {
         contentRef.current.parentNode.classList.remove('active');
         if (props.onClose) props.onClose();
     }
-    return(
+
+    return (
         <div ref={contentRef} className="modal__content">
             {props.children}
             <div className="modal__content__close" onClick={closeModal}>
