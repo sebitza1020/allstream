@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Filme Populare</h2>
-                        <Link to="/film">
+                        <Link to="/movie">
                             <OutlineButton classname="small">Vezi mai multe</OutlineButton>
                         </Link>
                     </div>
@@ -25,7 +25,7 @@ const Home = () => {
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Filme De Top</h2>
-                        <Link to="/film">
+                        <Link to="/movie">
                             <OutlineButton classname="small">Vezi mai multe</OutlineButton>
                         </Link>
                     </div>
@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Seriale Populare</h2>
-                        <Link to="/serial">
+                        <Link to="/tv">
                             <OutlineButton classname="small">Vezi mai multe</OutlineButton>
                         </Link>
                     </div>
@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Seriale De Top</h2>
-                        <Link to="/serial">
+                        <Link to="/tv">
                             <OutlineButton classname="small">Vezi mai multe</OutlineButton>
                         </Link>
                     </div>
