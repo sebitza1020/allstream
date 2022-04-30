@@ -18,6 +18,10 @@ const headerNav = [
     {
         display: 'Seriale',
         path: '/tv'
+    },
+    {
+        display: 'Înregistrează-te',
+        path: '/register'
     }
 ];
 
