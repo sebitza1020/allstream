@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit language</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container text-center" align="center">
+    <div>
+        <h1>Edit language</h1>
+        <br/>
+        <form th:action="@{add_language}" th:object="${language}" method="post">
+            <div class="m-3">
+                <div class="form-group row">
+                    <label class="col-4 col-form-label">Language ID: </label>
+                    <div class="col-8">
+                        <input type="text" th:field="*{languageId}" class="form-control" readonly />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label">Language Name: </label>
+                    <div class="col-8">
+                        <input type="text" th:field="*{languageName}" class="form-control" minlength="2" maxlength="2"
+                               required />
+                    </div>
+                </div>
+                <div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

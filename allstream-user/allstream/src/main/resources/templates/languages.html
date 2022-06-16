@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Languages available</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container text-center">
+    <div>
+        <h1>All available languages</h1>
+        <br/><br/>
+    </div>
+
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>Language ID</th>
+                <th>Language</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="language: ${languages}">
+                <td th:text="${language.languageId}">Language ID</td>
+                <td th:text="${language.languageName}">Language</td>
+                <td>
+                    <a th:href="@{'edit/' + ${language.languageId}}">Edit</a>
+                    <a th:href="@{'delete/' + ${language.languageId}}">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <br/><br/>
+        <h3><a href="/new_language">Add a new language</a></h3>
+    </div>
+</div>
+</body>
+</html>
