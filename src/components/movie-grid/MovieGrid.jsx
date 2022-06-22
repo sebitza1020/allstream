@@ -79,7 +79,7 @@ const MovieGrid = props => {
             {
                 page < totalPage ? (
                     <div className="movie-grid__loadmore">
-                        <OutlineButton className="small" onClick={loadMore}>Vezi mai multe</OutlineButton>
+                        <OutlineButton className="small" onClick={loadMore}>See More</OutlineButton>
                     </div>
                 ) : null
             }
@@ -119,11 +119,11 @@ const MovieSearch = props => {
         <div className="movie-search">
             <Input
                 type="text"
-                placeholder="Găsiți aici"
+                placeholder="Find here..."
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
             />
-            <Button className="small" onClick={goToSearch}>Căutare</Button>
+            <Button className="small" onClick={goToSearch}>Search</Button>
         </div>
     )
 }

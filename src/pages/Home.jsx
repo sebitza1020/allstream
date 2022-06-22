@@ -14,9 +14,9 @@ const Home = () => {
             <div className="container">
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Filme Populare</h2>
+                        <h2>Popular Movies</h2>
                         <Link to="/movie">
-                            <OutlineButton classname="small">Vezi mai multe</OutlineButton>
+                            <OutlineButton classname="small">More Popular Movies</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.movie} type={movieType.popular}/>
@@ -24,9 +24,9 @@ const Home = () => {
 
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Filme De Top</h2>
+                        <h2>Top Movies</h2>
                         <Link to="/movie">
-                            <OutlineButton classname="small">Vezi mai multe</OutlineButton>
+                            <OutlineButton classname="small">More Top Movies</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.movie} type={movieType.top_rated}/>
@@ -34,9 +34,9 @@ const Home = () => {
 
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Seriale Populare</h2>
+                        <h2>Popular TV Shows</h2>
                         <Link to="/tv">
-                            <OutlineButton classname="small">Vezi mai multe</OutlineButton>
+                            <OutlineButton classname="small">More Popular TV Shows</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.tv} type={tvType.popular}/>
@@ -44,9 +44,9 @@ const Home = () => {
 
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Seriale De Top</h2>
+                        <h2>Top TV Shows</h2>
                         <Link to="/tv">
-                            <OutlineButton classname="small">Vezi mai multe</OutlineButton>
+                            <OutlineButton classname="small">More Top TV Shows</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.tv} type={tvType.top_rated}/>

@@ -6,7 +6,16 @@ const Login = () => {
     const [mesajEroare, setMesajEroare] = useState({});
     const [butonApasat, setButonApasat] = useState(false);
 
-    
+    const database = [
+        {
+          username: "user1",
+          password: "pass1"
+        },
+        {
+          username: "user2",
+          password: "pass2"
+        }
+      ];    
 
     const erori = {
         uname: "Username invalid",

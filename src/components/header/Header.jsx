@@ -8,19 +8,19 @@ import logo from '../../assets/tmovie.png';
 
 const headerNav = [
     {
-        display: 'Acasă',
+        display: 'Home',
         path: '/'
     },
     {
-        display: 'Filme',
+        display: 'Movies',
         path: '/movie'
     },
     {
-        display: 'Seriale',
+        display: 'TV Shows',
         path: '/tv'
     },
     {
-        display: 'Loghează-te',
+        display: 'Login',
         path: '/login'
     }
 ];
