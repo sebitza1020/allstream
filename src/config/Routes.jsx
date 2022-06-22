@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
 import Detail from '../pages/detail/Detail';
+import Login from '../components/login/Login';
 
 const Routes = () => {
     return (
@@ -25,6 +26,11 @@ const Routes = () => {
                 path='/' 
                 exact
                 component={Home}
+            />
+            <Route
+                path='/login'
+                exact
+                component={Login}
             />
         </Switch>
     );

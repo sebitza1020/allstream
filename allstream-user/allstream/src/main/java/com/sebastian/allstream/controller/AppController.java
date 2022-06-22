@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
+@CrossOrigin
 public class AppController {
     @Autowired
     private UserRepository userRepository;
@@ -83,5 +84,10 @@ public class AppController {
     public String deleteProduct(@PathVariable(name = "language_id") int id) throws Exception {
         languageService.deleteLanguageById(id);
         return "redirect:/languages";
+    }
+
+    @RequestMapping("/get_user/{id}")
+    public String getUser(@PathVariable(name = "user_id") int id) {
+        userRepository.findById(id);
     }
 }

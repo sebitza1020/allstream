@@ -20,8 +20,8 @@ const headerNav = [
         path: '/tv'
     },
     {
-        display: 'Înregistrează-te',
-        path: '/register'
+        display: 'Loghează-te',
+        path: '/login'
     }
 ];
 
